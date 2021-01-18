@@ -15,6 +15,8 @@
 		ACEA309525B587C700D0C2A5 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309125B587C700D0C2A5 /* product.json */; };
 		ACEA309625B587C700D0C2A5 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309225B587C700D0C2A5 /* player.json */; };
 		ACEA309725B587C700D0C2A5 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309325B587C700D0C2A5 /* brand.json */; };
+		ACEA30A325B58ABA00D0C2A5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA30A225B58ABA00D0C2A5 /* Constant.swift */; };
+		ACEA30A625B58BDD00D0C2A5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA30A525B58BDD00D0C2A5 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ACEA309125B587C700D0C2A5 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		ACEA309225B587C700D0C2A5 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
 		ACEA309325B587C700D0C2A5 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		ACEA30A225B58ABA00D0C2A5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		ACEA30A525B58BDD00D0C2A5 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +109,8 @@
 		ACEA309B25B5895D00D0C2A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ACEA309D25B5896500D0C2A5 /* Detail */,
 				ACEA309C25B5896100D0C2A5 /* Home */,
+				ACEA309D25B5896500D0C2A5 /* Detail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 		ACEA309C25B5896100D0C2A5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ACEA30A525B58BDD00D0C2A5 /* FooterView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		ACEA309F25B5898400D0C2A5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ACEA30A225B58ABA00D0C2A5 /* Constant.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEA308125B5858E00D0C2A5 /* ContentView.swift in Sources */,
+				ACEA30A625B58BDD00D0C2A5 /* FooterView.swift in Sources */,
 				ACEA307F25B5858E00D0C2A5 /* ShopsApp.swift in Sources */,
+				ACEA30A325B58ABA00D0C2A5 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
