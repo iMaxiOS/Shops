@@ -11,6 +11,10 @@
 		ACEA308125B5858E00D0C2A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA308025B5858E00D0C2A5 /* ContentView.swift */; };
 		ACEA308325B5859000D0C2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEA308225B5859000D0C2A5 /* Assets.xcassets */; };
 		ACEA308625B5859000D0C2A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEA308525B5859000D0C2A5 /* Preview Assets.xcassets */; };
+		ACEA309425B587C700D0C2A5 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309025B587C700D0C2A5 /* category.json */; };
+		ACEA309525B587C700D0C2A5 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309125B587C700D0C2A5 /* product.json */; };
+		ACEA309625B587C700D0C2A5 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309225B587C700D0C2A5 /* player.json */; };
+		ACEA309725B587C700D0C2A5 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEA309325B587C700D0C2A5 /* brand.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		ACEA308225B5859000D0C2A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACEA308525B5859000D0C2A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACEA308725B5859000D0C2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEA309025B587C700D0C2A5 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		ACEA309125B587C700D0C2A5 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		ACEA309225B587C700D0C2A5 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		ACEA309325B587C700D0C2A5 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +60,15 @@
 		ACEA307D25B5858E00D0C2A5 /* Shops */ = {
 			isa = PBXGroup;
 			children = (
-				ACEA307E25B5858E00D0C2A5 /* ShopsApp.swift */,
-				ACEA308025B5858E00D0C2A5 /* ContentView.swift */,
-				ACEA308225B5859000D0C2A5 /* Assets.xcassets */,
+				ACEA309A25B5895200D0C2A5 /* App */,
+				ACEA309B25B5895D00D0C2A5 /* View */,
+				ACEA30A125B589B900D0C2A5 /* Data */,
+				ACEA309E25B5897F00D0C2A5 /* Model */,
+				ACEA308F25B587B400D0C2A5 /* JSONFile */,
+				ACEA309F25B5898400D0C2A5 /* Extension */,
+				ACEA30A025B5898C00D0C2A5 /* Utility */,
 				ACEA308725B5859000D0C2A5 /* Info.plist */,
+				ACEA308225B5859000D0C2A5 /* Assets.xcassets */,
 				ACEA308425B5859000D0C2A5 /* Preview Content */,
 			);
 			path = Shops;
@@ -67,6 +80,77 @@
 				ACEA308525B5859000D0C2A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACEA308F25B587B400D0C2A5 /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				ACEA309325B587C700D0C2A5 /* brand.json */,
+				ACEA309025B587C700D0C2A5 /* category.json */,
+				ACEA309225B587C700D0C2A5 /* player.json */,
+				ACEA309125B587C700D0C2A5 /* product.json */,
+			);
+			path = JSONFile;
+			sourceTree = "<group>";
+		};
+		ACEA309A25B5895200D0C2A5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ACEA307E25B5858E00D0C2A5 /* ShopsApp.swift */,
+				ACEA308025B5858E00D0C2A5 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACEA309B25B5895D00D0C2A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACEA309D25B5896500D0C2A5 /* Detail */,
+				ACEA309C25B5896100D0C2A5 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACEA309C25B5896100D0C2A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ACEA309D25B5896500D0C2A5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		ACEA309E25B5897F00D0C2A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACEA309F25B5898400D0C2A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ACEA30A025B5898C00D0C2A5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		ACEA30A125B589B900D0C2A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEA309625B587C700D0C2A5 /* player.json in Resources */,
+				ACEA309425B587C700D0C2A5 /* category.json in Resources */,
+				ACEA309525B587C700D0C2A5 /* product.json in Resources */,
 				ACEA308625B5859000D0C2A5 /* Preview Assets.xcassets in Resources */,
 				ACEA308325B5859000D0C2A5 /* Assets.xcassets in Resources */,
+				ACEA309725B587C700D0C2A5 /* brand.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Shops/Preview Content\"";
-				DEVELOPMENT_TEAM = R4XB56HC9M;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Shops/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -291,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Shops/Preview Content\"";
-				DEVELOPMENT_TEAM = R4XB56HC9M;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Shops/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
