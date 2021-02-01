@@ -21,11 +21,15 @@ struct ContentView: View {
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 4, x: 0, y: 4)
                 
-                
-                Spacer()
-                
-                FooterView()
-                    .padding(.horizontal)
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    FeaturedView()
+                        .padding(.vertical, 10)
+                    
+                    FooterView()
+                        .padding(.horizontal)
+                    
+                    Spacer()
+                })
             }
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }

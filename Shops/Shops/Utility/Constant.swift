@@ -7,5 +7,7 @@
 
 import SwiftUI
 
+let players: [PlayerModel] = Bundle.main.codable("player.json")
+
 let colorBackground: Color = Color("backgroundColor")
 let colorGray: Color = Color(UIColor.systemGray4)
