@@ -24,13 +24,10 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     FeaturedView()
                         .padding(.vertical, 10)
-                    
+                    ProductView()
                     CategoryGridView()
-                    
                     FooterView()
                         .padding(.horizontal)
-                    
-                    Spacer()
                 })
             }
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))

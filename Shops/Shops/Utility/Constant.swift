@@ -9,12 +9,16 @@ import SwiftUI
 
 let players: [PlayerModel] = Bundle.main.codable("player.json")
 let categories: [Category] = Bundle.main.codable("category.json")
+let products: [Product] = Bundle.main.codable("product.json")
 
 let colorBackground: Color = Color("colorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
 
 let columnSpacing: CGFloat = 10
 let rowSpacing: CGFloat = 10
-var gridLayout: [GridItem] {
+var HGridLayout: [GridItem] {
+    return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+}
+var VGridLayour: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
 }
