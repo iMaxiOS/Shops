@@ -28,6 +28,7 @@
 		ACEA30A625B58BDD00D0C2A5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA30A525B58BDD00D0C2A5 /* FooterView.swift */; };
 		ACF04EB925C5AC4500D33059 /* FeaturedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF04EB825C5AC4500D33059 /* FeaturedItemView.swift */; };
 		ACF04EBC25C5ACC300D33059 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF04EBB25C5ACC300D33059 /* FeaturedView.swift */; };
+		ACF98F0C25D5B0DE00062DD2 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF98F0B25D5B0DE00062DD2 /* TitleView.swift */; };
 		ACFB6F0D25C95015005A97DE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB6F0C25C95015005A97DE /* Category.swift */; };
 		ACFB6F1025C9530A005A97DE /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB6F0F25C9530A005A97DE /* CategoryItemView.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		ACEA30A525B58BDD00D0C2A5 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		ACF04EB825C5AC4500D33059 /* FeaturedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItemView.swift; sourceTree = "<group>"; };
 		ACF04EBB25C5ACC300D33059 /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
+		ACF98F0B25D5B0DE00062DD2 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		ACFB6F0C25C95015005A97DE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		ACFB6F0F25C9530A005A97DE /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 			children = (
 				ACDD97EE25C9E17100B6D60C /* ProductView.swift */,
 				ACDD97F425C9E3C500B6D60C /* ProductItemView.swift */,
+				ACF98F0B25D5B0DE00062DD2 /* TitleView.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				AC71357C25B8251C00538970 /* LogoView.swift in Sources */,
 				ACEA30A625B58BDD00D0C2A5 /* FooterView.swift in Sources */,
 				ACEA307F25B5858E00D0C2A5 /* ShopsApp.swift in Sources */,
+				ACF98F0C25D5B0DE00062DD2 /* TitleView.swift in Sources */,
 				ACDD97F525C9E3C500B6D60C /* ProductItemView.swift in Sources */,
 				ACF04EB925C5AC4500D33059 /* FeaturedItemView.swift in Sources */,
 				ACEA30A325B58ABA00D0C2A5 /* Constant.swift in Sources */,

@@ -10,18 +10,15 @@ import SwiftUI
 struct ProductView: View {
     var body: some View {
         VStack {
-            HStack {
-                Text("Hemlets")
-                    .font(.system(size: 28, weight: .bold))
-                Spacer()
-            }
-            LazyVGrid(columns: VGridLayour, alignment: .center, spacing: 15, content: {
+            TitleView(title: "Helmet")
+            
+            LazyVGrid(columns: VGridLayour, spacing: 15, content: {
                 ForEach(products) { product in
                     ProductItemView(product: product)
                 }
             })
         }
-        .padding([.bottom, .horizontal])
+        .padding(15)
     }
 }
 

@@ -17,26 +17,24 @@ struct ProductItemView: View {
                 Image(product.image)
                     .resizable()
                     .scaledToFill()
-                    .background(Color.blue.opacity(0.5))
+                    .background(Color(red: product.red, green: product.green, blue: product.blue, opacity: 1))
                     .cornerRadius(15)
             })
             
             Text(product.name)
                 .font(.title3)
-                .fontWeight(.bold)
+                .fontWeight(.black)
             
-            Text("$\(product.price.description)")
-                .font(.callout)
-                .fontWeight(.medium)
+            Text(product.formattedPrice)
+                .fontWeight(.semibold)
                 .foregroundColor(Color.gray)
-            
         }
     }
 }
 
 struct ProductItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductItemView(product: products[0])
+        ProductItemView(product: products[1])
             .padding()
             .previewLayout(.sizeThatFits)
     }

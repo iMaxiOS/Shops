@@ -24,8 +24,11 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false, content: {
                     FeaturedView()
                         .padding(.vertical, 10)
-                    ProductView()
+                    
                     CategoryGridView()
+                    
+                    ProductView()
+                    
                     FooterView()
                         .padding(.horizontal)
                 })
