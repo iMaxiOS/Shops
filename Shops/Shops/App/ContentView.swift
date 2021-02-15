@@ -29,6 +29,8 @@ struct ContentView: View {
                     
                     ProductView()
                     
+                    BrandView()
+                    
                     FooterView()
                         .padding(.horizontal)
                 })
