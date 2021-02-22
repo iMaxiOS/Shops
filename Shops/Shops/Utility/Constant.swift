@@ -11,6 +11,7 @@ let players: [PlayerModel] = Bundle.main.codable("player.json")
 let categories: [Category] = Bundle.main.codable("category.json")
 let products: [Product] = Bundle.main.codable("product.json")
 let brands: [Brand] = Bundle.main.codable("brand.json")
+let sampleProduct = products[0]
 
 let colorBackground: Color = Color("colorBackground")
 let colorGray: Color = Color(UIColor.systemGray4)
