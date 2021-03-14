@@ -13,7 +13,7 @@ struct BrandView: View {
             TitleView(title: "Brand")
             
             ScrollView(.horizontal, showsIndicators: false, content: {
-                LazyHGrid(rows: HGridLayout, spacing: 15, content: {
+                LazyHGrid(rows: gridLayout, spacing: 15, content: {
                     ForEach(brands) { brand in
                         BrandItemView(brand: brand)
                     }

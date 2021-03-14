@@ -12,7 +12,7 @@ struct ProductView: View {
         VStack {
             TitleView(title: "Helmet")
             
-            LazyVGrid(columns: VGridLayour, spacing: 15, content: {
+            LazyVGrid(columns: gridLayout, spacing: 15, content: {
                 ForEach(products) { product in
                     ProductItemView(product: product)
                 }
