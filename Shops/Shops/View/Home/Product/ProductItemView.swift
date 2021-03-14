@@ -13,13 +13,11 @@ struct ProductItemView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Button(action: {}, label: {
-                Image(product.image)
-                    .resizable()
-                    .scaledToFill()
-                    .background(Color(red: product.red, green: product.green, blue: product.blue, opacity: 1))
-                    .cornerRadius(15)
-            })
+            Image(product.image)
+                .resizable()
+                .scaledToFill()
+                .background(Color(red: product.red, green: product.green, blue: product.blue, opacity: 1))
+                .cornerRadius(15)
             
             Text(product.name)
                 .font(.title3)

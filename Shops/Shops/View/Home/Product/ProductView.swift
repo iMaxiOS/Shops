@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductView: View {
+    var shop: Shop
+    
     var body: some View {
         VStack {
             TitleView(title: "Helmet")
@@ -15,6 +17,13 @@ struct ProductView: View {
             LazyVGrid(columns: gridLayout, spacing: 15, content: {
                 ForEach(products) { product in
                     ProductItemView(product: product)
+                        .onTapGesture {                        
+                            withAnimation(.easeOut) {
+                                feedBack.impactOccurred()
+                                shop.selectedProduct = product
+                                shop.showingProduct = true
+                            }
+                        }
                 }
             })
         }
@@ -24,7 +33,7 @@ struct ProductView: View {
 
 struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductView()
+        ProductView(shop: .init())
             .previewLayout(.sizeThatFits)
             .padding()
     }
